@@ -14,7 +14,7 @@ function App() {
   if (user) {
     return <Redirect to="/" />;
   }
-
+  
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Header />
