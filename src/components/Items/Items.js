@@ -11,7 +11,6 @@ export default function Items() {
   const { items, setItems } = useItems();
   const { user } = useContext(UserContext);
 
-  // TODO -- redirect the user back to auth if there is not a current user
   if (!user) {
     return <Redirect to="/auth/sign-in" />;
   }
